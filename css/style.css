@@ -1,6 +1,6 @@
 body {
     background-color: black;
-    font-size: 34px;
+    font-size: 30px;
     padding: 8px 16px 0px 8px;
 <<<<<<< Updated upstream
     
@@ -12,8 +12,8 @@ body {
 header {
     padding: 0 0 50px 0;
     font-size: 30px;
-    text-decoration:line-through;
     color: white;
+    text-decoration: none;
 }
 
 li {
@@ -40,8 +40,14 @@ h1 a {
 }
 
 p {
-    margin-left; 50px;
+    font-family: sans-serif;
+    font-weight; normal;
+    letter-spacing: 0.5px;
+    line-height:28px;
+    margin-left: 100px;
     color: white;
+    display: block;
+    padding-right: 300px;
 }
 
 /* This makes the images scale to the full width of the page */
