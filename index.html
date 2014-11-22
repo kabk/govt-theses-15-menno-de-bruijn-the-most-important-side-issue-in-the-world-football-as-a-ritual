@@ -1,24 +1,189 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!-- ** see note -->
+
     <head>
-        <title>Thesis Christ</title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="css/normalize.css" />
-        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <!-- The classical Cartesian distinction, head and body! In the head comes all the metadata page needs to function-->
+
+        <title>De belangrijkste bijzaak ter wereld | Voetbal als ritueel | Menno de Bruijn</title> <!-- This is the title shown in the Window bar -->
+
+        <meta charset="utf-8"> <!-- You need this so the browser can understand ‘typographic quotes’ and accented characters éëê etc.-->
+
+        <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- This tag is important if we make a responsive site
+                                                                                  see http://kabk.github.io/govt4-coding/responsive-layout.html -->
+
+        <meta name="description" content="This is where you can put a short description of the page. Google will sometimes display this, and Facebook uses it to display in a link preview.">
+        
+        <!-- The following metadata can be useful for archiving -->
+        
+        <meta property="dc:creator" content="Wilco Monen">
+        <meta property="dc:created" content="2014-11-17T00:00:00Z">
+        <meta property="dc:modified" content="2014-11-20T00:00:00Z">
+        
+        <!-- Link stylesheets!-->
+        <link rel="stylesheet" type="text/css" href="css/normalize.css" /> <!-- This normalize.css file takes care of some inconsistencies between browsers -->
+        <link rel="stylesheet" type="text/css" href="css/style.css" /><!-- Here I put the rest of my styles-->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,600italic,700italic,700,600,400' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Viga|Convergence|Asul:400,700' rel='stylesheet' type='text/css'>
+		
+	    <script src="js/modernizr.custom.js"></script>
+	    <script src="js/jquery.min.js"></script><style type="text/css"></style>
+	    <script>
+	    $(function() {
+	      $('a[href*=#]:not([href=#])').click(function() {
+	        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+	          var target = $(this.hash);
+	          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+	          if (target.length) {
+	            $('html,body').animate({
+	              scrollTop: target.offset().top
+	            }, 1000);
+	            return false;
+	          }
+	        }
+	      });
+	    });
+	    </script>
     </head>
     <body>
-        <header>
-            <h1>Thesis Christ</h1>
+        <header> <!-- In HTML5 there are the elements header, nav, article and aside that are just like divs (blocks)… 
+                      The only difference is that through their name, they indicate their function,
+                      so it helps in structuring the code -->
+                 <!-- Note: the <head> tag is invisible metadata, the <header> tag is visible on the page!-->
+            <h1>De belangrijkste bijzaak ter wereld</h1> <!-- HTML allows for six levels of headings.
+           	 													 The convention is to use h1 for the site name, h2 for the article namee 
+                                                                 h3 for the section name, h4 for the subsection name etc.
+                                                                 Search engines rely on these headers -->
+				<h3>Voetbal als ritueel</h3>
         </header>
         <nav>
-            <ul>
-                <li><a href="abstract.html">Abstract</a></li>
-                <li><a href="references.html">References</a></li>
-            </ul>
+            <ul> <!-- <ul> means unordered list. Instead of a ist of links like this, you could also make a paragraph and do many <br/>’s
+                      The advantage of the list is that each list element has their own node (<li>), which gives you more control
+                      over styling through CSS, and makes it more easy to add JavaScript behaviours (accordeon etcetera). -->
+                <li><a href="#voorwoord">Voorwoord</a></li>
+			    <li><a href="#inleiding">Inleiding</a></li>
+                <li><a href="#voetbal">Voetbal</a></li>
+                <li><a href="#Ritueel">Ritueel</a></li>
+                <li><a href="#var">Voetbal als ritueel</a></li>
+                <li><a href="#Conclusie">Conclusie</a></li>
+                <li><a href="#bibliografie">Bibliografie</a></li>
+                <li><a href="#nawoord">Nawoord</a></li>
+				            </ul>
         </nav>
-        <article>
-            <p>Thesis Christ. Menno de Bruijn</p>
+        <article> <!-- I’ve put the main text in an ‘article’ tag. By default we will get a kind of static, blog style layout,
+                       where it will be one long scroll to the bottom. If you want to take elements of your thesis and position
+                       them in different ways, you might need to divide them up into <section>’s or <div>’s before you can
+                       position them through CSS -->
+            <h2><a id="voorwoord">Voorwoord</a></h2>
+            
+            <h2><a name="inleiding">Inleiding</a></h2>
+			
+            <p>Afgelopen zomer (2014) keek ik, zoals elke vier jaar, weer vol verwachting en spanning naar één van de grootste sportevenementen ter wereld; het WK voetbal. Ik houd van het spelletje, zowel om zelf te beoefenen als om het te aanschouwen. Op nationaal clubniveau heb ik een niet nader te noemen voorkeur, ik wil rivaliserende supporters tenslotte niet afschrikken, maar ik zou mijzelf niet betitelen als een die-hard fan. Echter wanneer het Nederlands Elftal om de twee jaar strijdt om de Europese beker of het Wereldkampioenschap, vertoon ik trekjes die bij de meest doorgewinterde supporter niet zouden misstaan. En wellicht nog opmerkelijker; met mij velen anderen, waarvan een groot deel zich normaliter zelfs amper met voetbal bezig houdt. Wat beweegt deze massa om zich plots in zulke grote getallen als dusdanig te gedragen? </p>
+
+			<p>Amper bekomen van de immense teleurstelling vanwege de uitschakeling van het Nederlands Elftal in de halve eindstrijd, begon ik mijzelf meer soortgelijke vragen te stellen omtrent dit culturele fenomeen. Waarom voelde ik me oprecht gelukkig en blij wanneer het Nederlands Elftal zijn wedstrijd winnend afsloot, maar ook intens ongelukkig als ‘we’ verloren? In het onderzoek naar sociologische en psychologische aspecten van ‘het fan zijn’ dat volgde, stuitte ik op het fenomeen van het ritueel, hetgeen geresulteerd heeft in de onderzoeksvraag: In hoeverre kan voetbal gezien worden als een ritueel en wat heeft dit voor invloed op de deelnemers hiervan? Om deze vraag te kunnen beantwoorden ben ik genoodzaakt het ritueel te onderzoeken, alvorens ik dit vergelijk met voetbal. </p>
+
+			<p>De scriptie is opgebouwd in drie hoofdstukken: Deel 1 fungeert als introductie van het fenomeen voetbal en haar geschiedenis en de significantie die het heeft in de hedendaagse maatschappij. Het tweede deel onderzoekt en beschrijft het ritueel zodat het vervolgens in deel drie naast elkander kan worden gelegd. In dit derde deel komt aan bod welke elementen ervoor zorgen dat het wel of niet als een (nationaal) ritueel kan worden beschouwd en wat voor werking dit heeft op de betreffende supporters. Heeft het bijvoorbeeld invloed op de culturele identiteit en nationale identificatie van de deelnemende massa? Tot slot zal ik in de conclusie het gehele onderzoek beknopt samenvatten en een standpunt innemen.</p>
+	
+			<h3>Vraagstelling</h3>
+				<p>In hoeverre kan voetbal gezien worden als een ritueel en wat heeft dit voor invloed op de deelnemers hiervan?</p>
+            
+			<h2><a name="voetbal">1 Voetbal (en haar significantie?)</a></h2>
+            <h3>1.1 Voetbal en haar geschiedenis</h3>
+            
+			<p>'Football is as old as the world . . . People have always played some form of football, from its very basic form of kicking a ball around to the game it is today.
+Sepp Blatter, FIFA President’</p>
+
+			<p>Volgens de FIFA (Fédération Internationale de Football Association), het internationale bestuursorgaan van het moderne voetbal, is de oudste vorm van voetbal terug te leiden naar China, twee tot drie eeuwen voor Christus. Bronnen afkomstig uit militaire handboeken van toen beschrijven een oefening genaamd Tsu ‘Chu, waarin opponenten een leren bal gebruikten gevuld met veren en haren. Het doel was om de bal in een klein net, dat bevestigd was aan bamboe stokken, te krijgen terwijl ze zich ook moesten verdedigen tegen aanvallen. Varianten van het spel zijn ook gedocumenteerd in de Egyptische en Griekse samenleving, waaruit blijkt dat de sport een lange traditie en geschiedenis heeft. De oudste Europese aanwijzing voor het bestaan van voetbal stamt uit de 93 eeuw. Het is een manuscript van Nennius (wie dit precies was is niet bekend) die schrijft over een groep jongens die bal spelen. In 1147 wordt er in Frankrijk gesproken over ‘La soule’, een sport die veel gelijkenissen vertoont met ‘Rugby’ en ‘American Football’. In Engeland werd in 1178 een beschrijving gegeven van ‘Vastenavond’ door William FitzStephen, (een knecht van de aartsbisschop van Canterbury) die schreef over een balspel die door alle jeugd in de stad werd gespeeld. Uit dezelfde periode komt ook een citaat van de Bischop van Lincoln die schreef:
+
+"Four and twenty bonny boys, were playing at the ball. He kicked the ball with his right foot”.
+
+Dit is het oudste citaat waar verteld wordt over het ‘schoppen van de bal’. </p>
+
+			<p>In de eeuwen hierna bleef het balspel zich ontwikkelen en stijgen in populariteit, vooral onder de arbeidersklasse, die het spel zagen als een kans om hun grieven te kanaliseren en te socialiseren met mensen van dezelfde achtergrond. In de 18e eeuw werd de sport zeer populair op de openbare scholen in het Verenigd Koninkrijk. Dit zorgde voor de introductie van specifieke regels voor het spel, die in 1848 werden opgesteld op een bijeenkomst in Cambridge, regels die vandaag de dag nog steeds gehanteerd worden. Vervolgens was Engeland in 1863 de eerste die een bestuursorgaan in de sport oprichtte, genaamd the Football Association.</P>
+
+			<p>De Britten worden ook beschouwd als essentieel bij het verspreiden van het spel over de wereld. Ze hadden door hun formele rijk en het immense informele rijk van de wereldwijde economische en culturele banden een grote reikwijdte om de sport te verspreiden. Zo was de eerste wedstrijd ooit buiten de Europese grenzen in Argentinie in 1867, onder leiding van een aantal Engelsen die op dat moment in het buitenland werkten.  
+</p>
+
+			<p>Toch kunnen we de adoptie van het universeel geliefde tijdverdrijf niet volledig toeschrijven aan het geografische bereik en cultureel cachet van Groot-Brittannië en de Britse sport, laat staan dat het voetbal was dat zou aanslaan. Voetbal is namelijk ontstaan en verspreid in een tijd waarin veel andere sporten ook werden gecodificeerd: rugby, hockey, tennis en golf in Groot-Brittannië; American football, honkbal en basketball in de Verenigde Staten; vechtsporten in Japan, en gymnastiek in Duitsland. Het was onwaarschijnlijk dat, in een tijd van explosieve industrialisatie, de massa samenlevingen van de negentiende en twintigste eeuw een individuele sport zouden omarmen. Deze stonden verder van de meerderheid van deze publieken af, en de ruimte waarin ze worden gespeeld bieden niet de mogelijkheid van een enorm spektakel. Tennis en andere racketsporten zijn fysiek alleen geschikt voor een beperkt aantal toeschouwers rond hun velden, en de teamsport basketbal lijdt aan hetzelfde probleem. Andere factoren van de aantrekkingskracht van voetbal onder teamsporten als een spel om te spelen, kijken en volgen zijn: het is eenvoudig, goedkoop en flexibel in termen van aantallen en ruimte om te spelen; het is gemakkelijk te leren, maakt gebruik van een grote diversiteit van het lichaam, en vereist niet een enkele set van vaardigheden, eigenschappen of deugden maar een beheersing van velen. Ook spreekt het aan omdat op het veld iedereen gelijk is en het niet meer uitmaakt wat je positie is maatschappelijk gezien. Dit gold vooral vroeger in koloniale tijden. De bezetters verslaan op het sportveld was een goede manier om zich tegen hen af te zetten. </p>
+
+			<p> In 1885 werden Engelse spelers voor het eerst betaald voor het beoefenen van voetbal, en in de opvolgende eeuw groeide de sport, mede door de industrialisatie, in een enorm tempo. De wereldvoetbalbond FIFA werd in 1904 opgericht, in 1920 werden in heel Europa professionele competities georganiseerd en in 1930 werd het eerste wereldkampioenschap gehouden in Uruguay. Een van de belangrijkste ontwikkelingen omtrent de populariteit onder de massa was in 1958 toen het WK voetbal voor het eerst op de televisie te zien was. </p>
+			
+
+
+				<h3>1.2 Voetbal anno nu</h3>
+				<p>Landelijk gezien is voetbal enkel een sport in minderheid in Noord-Amerika, Australië en Zuid-Azië, waar respectievelijk honkbal, rugby en cricket groter zijn. Maar ook hier is het voetbal een stijgende kracht die jaarlijks aan populariteit wint. Ondanks dat het dus niet overal volkssport nummer 1 is, is het heden ten dage de meest populaire sport ter wereld. FIFA denkt dat er in de wereld ongeveer één miljard mensen redelijk formeel voetballen, maar niemand weet exact hoeveel mensen het spel spelen.
+</p>
+
+<p>Naast het aantal spelende personen is de sport nog vele malen groter als er gekeken wordt naar de supportersaantallen en kijkers. Wekelijks zitten er wereldwijd miljoenen mensen aan de buis gekluisterd of in het stadion zelf om hun favoriete team aan te moedigen. Een van de oorzaken hiervan is dat in de afgelopen dertig jaar sport het snelst groeiende segment van de entertainmentindustrie is geweest, en voetbal de snelst groeiende sport(soccernomics). Dit is vooral te danken aan TV. In de vroege jaren ’90 bereikte het multi-channel tijdperk Europa. TV magnaten als Rupert Murdoch en Silvio Berlusconi gebruikte een aantal van de nieuwe kanalen om voetbal te laten zien. Het werd toen al snel duidelijk dat zelfs de populaire soaps, die decennialang hele naties aan de buis kluisterden, niet konden tippen aan de kijkersaantallen die de grote voetbalwedstrijden bereiken. 
+ </p>
+
+<p>De mate van populariteit heeft er ook voor gezorgd dat er inmiddels miljarden omgaat in de wereld van het voetbal en spelers van club ruilen voor astronomische bedragen. In 2012 was de omzet van de Europese competities 19,8 miljard Euro en verdiende de FIFA rond de 4 miljard Euro aan het WK. Van dit vele geld wordt weer een groter bereik gegenereerd waardoor het voetbal in populariteit zal blijven toenemen.
+</p>
+
+<p>Een jaarlijks ijkpunt om de populariteit van voetbal te meten is de UEFA Champions League (CL) finale. Deze wedstrijd werd voorheen qua aantal kijkers altijd voorbijgestreefd door de finale van de American Football-competitie, tot in 2009 de CL ‘won’. Het duel tussen Manchester United en FC Barcelona werd aanschouwd door 206 miljoen mensen wereldwijd, terwijl de finale van het ‘Amerikaanse voetbal’ tussen Pittsburgh Steelers en Arizona Cardinals 162 miljoen kijkers trok. Dit was overigens ook voor de National Football League een record. Sinds 2009 is de CL-finale de populairste van de twee gebleven. </br>
+Bij internationale voetbaltoernooien als het Europees Kampioenschap en het Wereldkampioenschap stijgen de kijkersaantallen tot nog grotere hoogte met de finale als ultieme climax. Keer op keer gaat deze finale de boeken in als het meest bekeken sportevenement ter wereld. 3.2 miljard mensen, wat neer komt op 46% van de wereldbevolking, hebben thuis minimaal één minuut thuis het WK van 2010 gekeken. De finale werd gezien door 909,6 miljoen mensen. Dit maakt het de grootste simultane menselijke collectieve ervaring ooit. Een feit dat een vroegere uitspraak van Kofi Anan kracht bij zet: ‘For 90 minutes at a time, people become one nation’.</p>
+
+				<p>De vraag rijst of er een culturele praktijk globaler is dan voetbal? Vieringen van geboorte, dood en huwelijk zijn universeel en kunnen dus gezien worden als globaler dan voetbal. Het verschil is echter dat deze vieringen oneindig zijn in hun diversiteit, terwijl voetbal overal ter wereld gespeeld wordt volgens dezelfde regels. Zelfs geen enkele religie kan de geografische reikwijdte van voetbal overeenkomen. </p>
+				
+				<h3>1.3 Meer dan een spel</h3>
+				<p>‘Some people believe football is a matter of life and death… I assure you it is much, much more important than that’
+</p>
+
+<p>Zoals Bill Shankly, de legendarische oud-manager van de Engelse club Liverpool, beweerde kort voor hij overleed in 1981, kan de significantie van het voetbal nooit worden onderschat. Voetbal kan invloed hebben op het leven op nationaal en internationaal vlak, revoluties inspireren en oorlogen veroorzaken, evenals het de mogelijkheid heeft om vrede te creëren en verschillen te beslechten. </br>
+De ‘voetbal oorlog’ tussen Honduras en El Salvador in 1969 is wellicht het meest bekende voorbeeld van de bredere implicaties van de sport. Tijdens de kwalificatie voor het wereldkampioenschap van 1970, raakten supporters slaags. Gevoegd bij al bestaande spanningen was dat aanleiding voor El Salvador om de aanval op het buurtland te openen. La gure del futbol, ook wel de ‘oorlog van 100 uur’ genoemd, kostte drieduizend mensen het leven.</p>
+
+<p>Er zijn talloze andere voorbeelden en anekdotes over ‘voetbal oorlogen’, ‘blijvende rivaliteit’ en ‘symbolische overwinningen’ die alleen hun betekenis krijgen wanneer ze geïnterpreteerd worden binnen de grotere politiek-culturele achtergrond. Het Duitse naoorlogse herstel van het zelfvertrouwen in 1954 (‘het wonder van Bern’), wedstrijden tussen landen uit de vroegere Sovjet-Unie en het Rusland van nu, en de wedstrijd tussen Dinamo Zagreb (Kroatië) en Rode Ster Belgrado (Servië) in 1990 zijn maar enkele van deze voorbeelden. Laatstgenoemde wedstrijd veroorzaakte, door de rellen naar aanleiding van de wedstrijd, een dynamiek die culmineerde in de ineenstorting van Joegoslavië. Een recent voorbeeld is de wedstrijd tussen Albanië en Servië, op 14 oktober 2014, dat door de geschiedenis en huidige situatie rond Kosovo bol stond van de spanningen. Het duel werd gestaakt nadat er een drone over het veld vloog met een provocerende vlag van Albanië en de situatie volledig uit de hand liep. In dergelijke gevallen wordt het stadion vaak een podium voor supporters om bijvoorbeeld politieke standpunten ten gehore te brengen. Zoals David Goldblatt verwoorde: The opportunity that this provides for the collective dramatization of identities and social relationships, both spontaneous and organized, is without parallel in the field of global popular culture.’ Zo is het stadion Camp Nou van FC Barcelona om de week een podium om de strijd voor onafhankelijkheid van Catalonia kracht bij te zetten.</p>
+
+				<p>Alle eerder genoemde voorbeelden gaan specifiek om twee partijen, maar er zijn ook gevallen waar de politieke-culturele achtergrond en verschillen op een breder vlak gedragen worden, met Israel als beste voorbeeld. Israëlische voetbalclubs voetballen mee in de Europese Champions League en het nationale team van Israel werkt zijn kwalificatiewedstrijden ook in Europa af in plaats van op het eigen continent. Vanwege politieke problemen heeft het team in vijf verschillende werelddelen gespeeld omtrent de kwalificatie voor het WK. Europa blijkt het enige continent waar de veiligheid van zowel spelers als supporters gegarandeerd kan worden.
+				</p>
+				
+				<p>Naast het feit dat voetbal als katalysator voor revoluties en oorlogen kan fungeren, heeft het ook vooral de kracht om te binden en verschillen in welvaart en etniciteit te slechten, hetgeen in het voetbalgekke Brazilië veelal gebeurd. In het Zuid-Amerikaanse land, waar elke wedstrijd op het afgelopen WK een nationale feestdag was, is voetbal een van de weinige elementen die het sentiment van Brazilië verenigt en de samenleving aan elkaar lijmt. Dat is ook de reden waarom het dramatisch is als het nationale team verliest. Het is dan namelijk niet enkel het voetbalteam dat verliest, het is je eigen identiteit als Braziliaan waaraan getwijfeld wordt. Om de populariteit van voetbal in Brazilië te schetsen: de drie meest voorkomende sociale instellingen in het leven van de gemiddelde Braziliaan, zijn zijn of haar religieuze tempel, de publieke gevangenis, en het voetbalveld. </p>
+				
+				<p>Waar velen wel eens roepen: ‘het is maar een spelletje’ kan voetbal in veel gevallen ook worden beschouwd als meer dan alleen dit spelletje. De mate waarin voetbal sociale conflicten theatraliseerd en als steunpunt fungeert voor gemeenschappen en solidariteit, suggereert dat het echte sporen achterlaat die blijven na een enkele wedstrijd, verbindingen die circuleren in de wereld buiten het stadion. Voetbal zien als enkel een wedstrijd onderschat de mate waarin hele seizoenen, lange historische traditie, derby’s en wrok, geschiedenis en politiek verbonden zijn met voetbal en haar supporters. Waar je kunt twijfelen aan het kaliber van het argument, de kwaliteit van het gesprek en de waarheidsgetrouwheid van de geschiedenis, kun je niet twijfelen aan hun bestaan. </p>
+					
+	
+	
+				<h2><a name="Ritueel">2. Ritueel</a></h2>
+				<h3>2.1 Soorten rituelen</h3>
+				<h3>2.2 Ritueel en religie</h3>
+				<h3>2.3 xxxx</h3>
+				
+				<p>-</p>
+            	
+				<h2><a name="var">3. Voetbal als ritueel</a></h2>
+				<h3>3.1 Overeenkomsten en verschillen</h3>
+				<h3>3.2 Gevolgen, nationale identificatie, collectieve identiteit etc</h3>
+				<h3>3.3 Rol media etc.?</h3>
+				
+				<p>-</P>
+				
+				
+				<h2>4. De belangrijkste bijzaak ter wereld</h2>
+				<h3><a name="Conclusie">4.1 Conclusies, statement etc.</a></h3>
+				
+				<p>-</p>
+				
+				
+				<h3><a name="bibliografie">Bibliografie</a></h3>
+				
+				<p>-</p>
+				
+				
+				<h3><a name="nawoord">Nawoord</a></h3>
+				
+				<p>-</p>
+				
+				
         </article>
+		<footer>
+		<h4>Menno de Bruijn</h4>
+		<h4>Scriptie</h4>
+		<h5>2014-2015</h5>
+	</footer>
     </body>
+    
+<!-- ** note: Normally, just <html lang="en"> would be enough, but we add some extra attributes ‘xmlns’ and ‘xml:lang’ that ePub likes,
+     in case we are going to make an electronic book out of this website! -->
 </html>

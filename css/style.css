@@ -1,53 +1,89 @@
 body {
-    background-color: black;
-    font-size: 30px;
-    padding: 8px 16px 0px 8px;
-<<<<<<< Updated upstream
-    
-=======
-
->>>>>>> Stashed changes
+    padding: 8px 16px 0px 8px;	
+	background-color:#000000;
 }
 
 header {
-    padding: 0 0 50px 0;
-    font-size: 30px;
-    color: white;
-    text-decoration: none;
+    font-size: 22px;
+	font-weight: 200;
+	margin-left: 0px;
+	font-family: 'Convergence', sans-serif;
+	margin-top: 50px;
+	letter-spacing: 1px;
+}
+
+nav{
+	width: 250px;
+	position: fixed;
+	margin-top: -100px;
+	font-size: 18px;
+	left: 10px;
+	text-align: left;
+	text-transform: uppercase;
+}
+
+footer{
+	font-family: 'Convergence', sans-serif;
+	position: fixed;
+	bottom: 0px;
+	right: -150px;
+	text-align: right;
+	
+}
+
+
+article {
+	margin-top: 50px;
+	font-family: helvetica, sans-serif;
+	font-size: 17px;
+	color: white;
 }
 
 li {
     list-style: none;
-    margin-bottom: 4px;
+    margin-bottom: 8px;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    margin: 20px;
+
+h1, h2, h3, h4,h5, h6 {
+    margin: 10px 180px;
+	font-family: 'Helvetica', sans-serif;
+	color: white;
+	margin-left: 230px;
+}
+h2{
+	margin-top: 120px;
 }
 
 ul, ol {
-    margin-top: 20px;
     padding-left: 20px;
 }
 
-a, a:hover, a:visited, a:active {
-    color: white;
+
+a{
+	color:white;
+	text-decoration: none;
 }
 
-h1 a {
-    
-    font-family: comic sans;
+a:hover{
+	color: white;	
+	text-decoration: underline;
+} 
+a:visited{
+	color:white;
+}
+a:active {
+    color: gray;
 }
 
 p {
-    font-family: sans-serif;
-    font-weight; normal;
-    letter-spacing: 0.5px;
-    line-height:28px;
-    margin-left: 100px;
-    color: white;
-    display: block;
-    padding-right: 300px;
+	font-size: 17px;
+    margin-top: 0;
+	margin-right: 250px;
+	line-height: 1.7;
+	margin-bottom: 25px;
+	margin-left: 250px;
+	
 }
 
 /* This makes the images scale to the full width of the page */
@@ -56,66 +92,126 @@ img {
     height: auto;
 }
 
+img.noscale {
+    width: inherit;
+}
+#footnote_gedicht {
+	display: inline;
+	z-index: 1000;
+	font-size: 15px;
+	width: 350px;
+}
+
+
 
 @media screen and (max-width: 36em) {
-    /* These CSS instructions are only used, if the 
-     * ‘media query’ above turns out to be true 
-     * 
-     * Media query’s can use properties like:
-     * width
-     * orientation
-     * resolution
-     * screen / print
-     */
-    /* Smaller Screens */
-    /* Our heading can be smaller */
-     header h1 {
-        font-size: 16px;
-        font-style: italic;
-    }
+body {
+    padding: 0px 0px 0px 0px;	
+	background-color: white;
+}
+
+header {
+    font-size: 10px;
+	font-weight: 700;
+	font-family: 'Convergence', sans-serif;
+	margin-left: -150px;
+}
+
+nav{
+	display: block;
+	position: absolute;
+	width: 120px;
+	margin-top:0px;
+	font-size: 15px;
+}
+
+footer{
+display: none;
+}
+
+
+article {
+	margin-top: 25px;
+	font-family: georgia, sans-serif;
+	font-size: 17px;
+}
+
+li {
+    list-style: none;
+    margin-bottom: 8px;
+}
+
+
+h1, h2, h3, h4,h5, h6 {
+    margin: 10px 180px;
+	font-family: 'Convergence', sans-serif;
+}
+h2{
+	margin-top: 0px;
+	font-size: 12px;
+	
+}
+
+ul, ol {
+    padding-left: 20px;
+}
+
+
+a{
+	color:black;
+	text-decoration: none;
+}
+
+a:hover{
+	color: black;	
+	text-decoration: underline;
+} 
+a:visited{
+	color:black;
+}
+a:active {
+    color: gray;
+}
+
+p {
+	font-size: 17px;
+    margin-top: 0;
+	margin-right: 250px;
+	line-height: 1.8;
+	margin-bottom: 25px;
+	margin-left: 150px;
+	
+}
+	
 }
 
 @media only screen and (min-width: 36em) {
-    article { 
-    /* Larger Screens */
-        width: calc(100% - 200px);
-        float: right;
-        margin-right: 0;
-        font-size: 24px;
-        line-height: 24px;
-        font-color: blue;
-        font-family: comic sans;
-        
-        
-/* If ever we want to mirror the text:
-        -moz-transform: scale(-1, 1);
-        -webkit-transform: scale(-1, 1);
-        -o-transform: scale(-1, 1);
-        -ms-transform: scale(-1, 1);
-        transform: scale(-1, 1);
-*/    }
-    nav {
-        width: 200px;
-        float: left;
-        margin-left: 0;
-    }
-    footer {
-        clear: both;
-    }
-
+   
 }
 
 @media only print {
+	body{
+		background-color: none;
+	}
     /**
-     * When printing, the header is useful but it doesn’t need
+     * When printing, the header is useful but it doesnâ€™t need
      * to be so big
      */
-    header h1 {
-        font-size: 24px;
-        font-style: italic;
+    header h1, h2{
+        font-size: 18pt;
+        font-weight: normal;
     } 
-    /* And the navigation we don’t need */
+	article {
+		margin-left: 200px;
+		margin-right: -300px;
+		font-size: 12pt;
+	}
+    /* And the navigation we donâ€™t need */
     nav {
         display: none;
     }
+	footer{
+		font-size: 8pt;
+		line-height: 1.2;
+	}
 }
