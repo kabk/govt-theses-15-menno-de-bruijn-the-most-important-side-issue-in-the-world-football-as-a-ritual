@@ -144,7 +144,7 @@ li {
 
 
 h1, h2, h3, h4,h5, h6 {
-    margin: 10px 30px;
+    margin: 10px 20px;
 	font-family: 'Helvetica', sans-serif;
 	color: white;
 }
@@ -189,10 +189,10 @@ a:active {
 p {
 	font-size: 12px;
     margin-top: 0;
-	margin-right: 50px;
+	margin-right: 30px;
 	line-height: 1.8;
 	margin-bottom: 25px;
-	margin-left: 50px;
+	margin-left: 30px;
 	
 }
 	
