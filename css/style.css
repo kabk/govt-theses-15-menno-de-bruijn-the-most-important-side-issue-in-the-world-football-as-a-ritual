@@ -5,7 +5,6 @@ body {
 
 header {
     font-size: 22px;
-	font-weight: 200;
 	margin-left: 0px;
 	font-family: 'Convergence', sans-serif;
 	margin-top: 50px;
@@ -50,7 +49,7 @@ h1, h2, h3, h4,h5, h6 {
     margin: 10px 180px;
 	font-family: 'Helvetica', sans-serif;
 	color: white;
-	margin-left: 230px;
+	margin-left: 180px;
 }
 h2{
 	margin-top: 120px;
@@ -80,10 +79,10 @@ a:active {
 p {
 	font-size: 17px;
     margin-top: 0;
-	margin-right: 250px;
+	margin-right: 200px;
 	line-height: 1.7;
 	margin-bottom: 25px;
-	margin-left: 250px;
+	margin-left: 200px;
 	
 }
 
@@ -108,22 +107,23 @@ img.noscale {
 @media screen and (max-width: 36em) {
 body {
     padding: 0px 0px 0px 0px;	
-	background-color: white;
+	background-color: black;
 }
 
 header {
     font-size: 10px;
-	font-weight: 700;
 	font-family: 'Convergence', sans-serif;
-	margin-left: -150px;
+	margin-left: 0px;
 }
 
 nav{
+	display: none;
 	display: block;
 	position: absolute;
 	width: 120px;
 	margin-top:0px;
 	font-size: 15px;
+	color: white;
 }
 
 footer{
@@ -133,8 +133,8 @@ display: none;
 
 article {
 	margin-top: 25px;
-	font-family: georgia, sans-serif;
-	font-size: 17px;
+	font-family: helvetica, sans-serif;
+	font-size: 15px;
 }
 
 li {
@@ -144,14 +144,25 @@ li {
 
 
 h1, h2, h3, h4,h5, h6 {
-    margin: 10px 180px;
-	font-family: 'Convergence', sans-serif;
+    margin: 10px 30px;
+	font-family: 'Helvetica', sans-serif;
+	color: white;
 }
 h2{
 	margin-top: 0px;
 	font-size: 12px;
+	color: white;
 	
 }
+
+h1{
+	font-size: 25px;
+	color: white;
+	
+}
+
+
+
 
 ul, ol {
     padding-left: 20px;
@@ -159,28 +170,29 @@ ul, ol {
 
 
 a{
-	color:black;
+	display:none;
+	color:white;
 	text-decoration: none;
 }
 
 a:hover{
-	color: black;	
+	color: white;	
 	text-decoration: underline;
 } 
 a:visited{
-	color:black;
+	color:white;
 }
 a:active {
     color: gray;
 }
 
 p {
-	font-size: 17px;
+	font-size: 12px;
     margin-top: 0;
-	margin-right: 250px;
+	margin-right: 50px;
 	line-height: 1.8;
 	margin-bottom: 25px;
-	margin-left: 150px;
+	margin-left: 50px;
 	
 }
 	
