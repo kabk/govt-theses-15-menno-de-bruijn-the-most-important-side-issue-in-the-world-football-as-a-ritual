@@ -22,15 +22,16 @@ nav{
 	text-transform: uppercase;
 	font-family: Helvetica, sans-serif;
 	letter-spacing: 0.04em;
-	top: 10px;
-	color: white;
+	top: 15px;
+	z-index: 999;
+	
 	
 }
 
 footer{
 	font-family: Helvetica, sans-serif;
 	position: fixed;
-	bottom: 30px;
+	bottom: 15px;
 	text-align: left;
 	left: 10px;
 	width: 250px;
@@ -40,7 +41,7 @@ footer{
 	text-align: left;
 	text-transform: uppercase;;
 	letter-spacing: 0.04em;
-	padding-left: 20px;
+	padding-left: 15px;
 	
 }
 
@@ -52,7 +53,7 @@ titel{
 	color: white;
 	margin-top: -400px;
 	border: solid white 2px;
-	font-size: 55px;
+	font-size: 60px;
 	width: 60%;
 	margin-bottom: 0px;
 	line-height: 68px;
@@ -70,16 +71,27 @@ ondertitel{
 	color: white;
 	text-align: center;
 	border: solid white 2px;
-	margin-top: 50px;
-	width: 60%;
+	margin-top: 70px;
+	width: 70%;
 	font-size: 40px;
 	margin-bottom: -10px;
 	line-height: 60px;
 	text-transform: uppercase;;
 	letter-spacing: 0.04em;
-	transform: rotate(-11deg);
+	transform: rotate(-10deg);
 	margin-right:auto;
     margin-left: auto;
+}
+
+img {
+    width:64%;
+    display: block;
+    height: auto;
+    margin-right:auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    position: inherit;
 }
 
 
@@ -88,12 +100,14 @@ article {
 	font-family: 'Noto Sans', sans-serif;
 	font-size: 17px;
 	color: black;
+	z-index: 1;
 }
 
 li {
     list-style: none;
     margin-bottom: 8px;
     color: white;
+
 }
 
 
@@ -154,7 +168,8 @@ h6{
 
 
 ul, ol {
-    padding-left: 20px;
+    padding-left: 15px;
+    z-index: 999;
 }
 
 
@@ -196,12 +211,10 @@ a{
 	color:black;
 	text-decoration: none;
 	cursor: url(http://payload194.cargocollective.com/1/6/220116/6186237/cursor.gif), auto;
+	
 }
 
 
-.custom {
-   cursor: url('cursor.png'), auto;
-}
 
 a:hover{
 	color: black;	
@@ -226,17 +239,6 @@ p {
 
 /* This makes the images scale to the full width of the page */
 
-
-
-img {
-    width:60%;
-    display: block;
-    height: auto;
-    margin-right:auto;
-    margin-left: auto;
-    margin-bottom: 30px;
-    margin-top: 20px;
-}
 
 
 #headerimg {
@@ -304,6 +306,57 @@ footer{
 	bottom: 20px;
 	left: 0px;
 }
+
+img {
+    width:70%;
+    display: block;
+    height: auto;
+    margin-right:auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    margin-top: 20px;
+    margin-right: 80px;
+}
+
+titel{
+	font-family: Helvetica, sans-serif;
+	font-weight: bold;
+	display: inherit;
+	text-align: center;
+	color: white;
+	margin-top: -230px;
+	border: solid white 2px;
+	font-size: 40px;
+	width: 60%;
+	margin-bottom: 0px;
+	line-height: 48px;
+	text-transform: uppercase;;
+	letter-spacing: 0.04em;
+	transform: rotate(6deg);
+	margin-right:auto;
+    margin-left: auto;
+}
+
+ondertitel{
+	font-family: Helvetica, sans-serif;
+	font-weight: bold;
+	display: block;
+	color: white;
+	text-align: center;
+	border: solid white 2px;
+	margin-top: 50px;
+	width: 70%;
+	font-size: 25px;
+	margin-bottom: -10px;
+	line-height: 35px;
+	text-transform: uppercase;;
+	letter-spacing: 0.04em;
+	transform: rotate(-6deg);
+	margin-right:auto;
+    margin-left: auto;
+}
+
+
 
 
 article {
@@ -437,10 +490,58 @@ footer{
 display: none;
 }
 
+img {
+    width:100%;
+    display: block;
+    height: auto;
+    margin-right:auto;
+    margin-left: auto;
+    margin-bottom: 30px;
+    margin-top: 0px;
+}
+
+titel{
+	font-family: Helvetica, sans-serif;
+	display: inherit;
+	text-align: center;
+	color: white;
+	font-weight: 200;
+	margin-top: -90px;
+	border: solid white 1px;
+	font-size: 18px;
+	width: 90%;
+	margin-bottom: 0px;
+	line-height: 22px;
+	text-transform: uppercase;;
+	letter-spacing: 0.04em;
+	transform: rotate(2deg);
+	margin-right:auto;
+    margin-left: auto;
+}
+
+ondertitel{
+	font-family: Helvetica, sans-serif;
+	font-weight: 200;
+	display: block;
+	color: white;
+	text-align: center;
+	border: solid white 1px;
+	margin-top: 10px;
+	width: 60%;
+	font-size: 15px;
+	margin-bottom: -10px;
+	line-height: 17px;
+	text-transform: uppercase;;
+	letter-spacing: 0.04em;
+	transform: rotate(-3deg);
+	margin-right:auto;
+    margin-left: auto;
+}
+
 
 article {
 	margin-top: 25px;
-	font-family: 'Noto Sans', sans-serif;
+	font-family: Helvetica, sans-serif;
 	font-size: 15px;
 }
 
@@ -452,7 +553,7 @@ li {
 
 h1, h2, h3, h4,h5, h6 {
     margin: 20px 55px;
-	font-family: 'Noto Sans', sans-serif;
+	font-family: Helvetica, sans-serif;
 	color: black;
 }
 
@@ -470,6 +571,8 @@ h2{
 	font-size: 20px;
 	color: black;
 	width: 80%;
+	margin-bottom: -20px;
+	margin-top: 10px;
 	
 }
 
