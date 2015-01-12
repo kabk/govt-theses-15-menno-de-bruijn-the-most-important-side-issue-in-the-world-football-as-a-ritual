@@ -48,7 +48,7 @@ ondertitel{
 	font-family: Helvetica, sans-serif;
 	display: block;
 	text-align: right;
-	margin-top: 150px;
+	margin-top: -850px;
 	font-size: 40px;
 	margin-bottom: -100px;
 	line-height: 38px;
@@ -208,6 +208,26 @@ img {
     margin-left: auto;
     margin-bottom: 30px;
     margin-top: -10px;
+}
+
+imgheader {
+    width:100%;
+    display: block;
+    height: auto;
+}
+
+#wrapperHeader {
+
+position: relative;
+background-image:url(images/header.png);
+
+}
+
+#header{
+
+background:url(images/header.png) no-repeat;
+width:100%
+
 }
 
 img.noscale {
