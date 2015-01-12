@@ -1,5 +1,4 @@
-body {
-    padding: 8px 16px 0px 8px;	
+body {	
 	background-color:white;
 	font-family: 'Noto Sans', sans-serif;
 }
@@ -24,6 +23,7 @@ nav{
 	font-family: Helvetica, sans-serif;
 	letter-spacing: 0.04em;
 	top: 10px;
+	color: white;
 	
 }
 
@@ -44,18 +44,42 @@ footer{
 	
 }
 
-ondertitel{
+titel{
 	font-family: Helvetica, sans-serif;
-	display: block;
-	text-align: right;
-	margin-top: -850px;
-	font-size: 40px;
-	margin-bottom: -100px;
-	line-height: 38px;
+	font-weight: bold;
+	display: inherit;
+	text-align: center;
+	color: white;
+	margin-top: -400px;
+	border: solid white 2px;
+	font-size: 55px;
+	width: 60%;
+	margin-bottom: 0px;
+	line-height: 68px;
 	text-transform: uppercase;;
 	letter-spacing: 0.04em;
-	transform: rotate(-20deg);
-	
+	transform: rotate(6deg);
+	margin-right:auto;
+    margin-left: auto;
+}
+
+ondertitel{
+	font-family: Helvetica, sans-serif;
+	font-weight: bold;
+	display: block;
+	color: white;
+	text-align: center;
+	border: solid white 2px;
+	margin-top: 50px;
+	width: 60%;
+	font-size: 40px;
+	margin-bottom: -10px;
+	line-height: 60px;
+	text-transform: uppercase;;
+	letter-spacing: 0.04em;
+	transform: rotate(-11deg);
+	margin-right:auto;
+    margin-left: auto;
 }
 
 
@@ -69,6 +93,7 @@ article {
 li {
     list-style: none;
     margin-bottom: 8px;
+    color: white;
 }
 
 
@@ -85,10 +110,10 @@ h1, h2, h3, h4,h5, h6 {
 }
 
 h1{
-	margin-bottom: 60px;
-	margin-top: -35px;
+	margin-bottom: 200px;
+	margin-top: -100px;
 	letter-spacing: 0.05em;
-	font-weight: 400;
+	font-weight: bold;
 	padding-right: 70px;
 	font-size: 60px;
 
@@ -200,6 +225,9 @@ p {
 }
 
 /* This makes the images scale to the full width of the page */
+
+
+
 img {
     width:80%;
     display: block;
@@ -207,32 +235,28 @@ img {
     margin-right:auto;
     margin-left: auto;
     margin-bottom: 30px;
-    margin-top: -10px;
+    margin-top: 20px;
 }
 
-imgheader {
-    width:100%;
-    display: block;
-    height: auto;
+
+#headerimg {
+  position: relative;   
+  width: 100%; 
+  margin-top: -100px;
 }
 
-#wrapperHeader {
-
-position: relative;
-background-image:url(images/header.png);
-
+#headerimg img { 
+  margin: auto; 
+  min-width: 100%;
 }
 
-#header{
 
-background:url(images/header.png) no-repeat;
-width:100%
 
-}
 
 img.noscale {
     width: inherit;
 }
+
 #footnote_gedicht {
 	display: inline;
 	z-index: 1000;
